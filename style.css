@@ -1,0 +1,414 @@
+/*============================================ 
+ *  Common CSS Area Start
+ *============================================*/
+
+ * {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+:root {
+  --color-black: #000000;
+  --color-black-333: #333333;
+  --color-gray-777: #777777;
+  --color-white: #ffffff;
+  --color-blue-45567d: #45567d;
+  --color-orangered: #ff4500;
+  --color-green-04AA6D: #04aa6d;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  margin: 0 5%;
+}
+
+.hidden {
+  display: none;
+}
+.active {
+  background: var(--color-white)!important;
+  color: var(--color-black-333)!important;
+  transition: .3s ease-in-out;
+  box-shadow: 0px 0px 4px var(--color-black);
+}
+
+/*============================================ 
+ *  Header Area Start
+ *============================================*/
+
+.header-area {
+  background: var(--color-black-333);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+  z-index: 10;
+}
+
+.header-area-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left-side h1 a {
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 1.25rem;
+  font-style: italic;
+  font-size: 2.5rem;
+  display: inline-block;
+}
+
+.header-left-side h1 a:hover {
+  tab-size: 2px 2px 4px var(--color-black);
+}
+
+.header-right-side ul {
+  display: flex;
+}
+
+.header-right-side ul li {
+  list-style: none;
+}
+
+.header-right-side ul li a {
+  text-decoration: none;
+  padding: 0.625rem 1rem;
+  display: block;
+  font-size: 1.125rem;
+  text-transform: capitalize;
+  color: var(--color-white);
+  letter-spacing: 1px;
+}
+
+.header-right-side ul li a:hover {
+  transition: 0.3s;
+}
+
+/*============================================ 
+ * Main Area Start
+ *============================================*/
+
+.about-area,
+.work-area,
+.contact-area {
+  min-height: 100vh;
+}
+
+/*============================================ 
+ *  about-area Start
+ *============================================*/
+
+.about-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background: var(--color-gray-777);
+}
+
+.about-area div {
+  text-align: center;
+}
+
+.about-area h1 {
+  font-size: 5rem;
+  color: var(--color-white);
+  margin-bottom: 0.125rem;
+  text-shadow: 2px 2px 4px var(--color-black);
+}
+
+.imran {
+  color: var(--color-orangered);
+}
+
+.fswd {
+  color: var(--color-green-04AA6D);
+}
+
+.about-area h3 {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: var(--color-black-333);
+  margin-bottom: 1rem;
+}
+
+/*============================================ 
+ *  work-area Start
+ *============================================*/
+
+.work-area {
+  background: var(--color-blue-45567d);
+  text-align: center;
+  padding: 5rem 2rem 6rem;
+  background: #45567d;
+}
+
+.work-area-header {
+  max-width: 640px;
+  margin: 0 auto 3rem auto;
+  border-bottom: 0.2rem solid var(--color-white);
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+  color: var(--color-white);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2.5rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.project-item {
+  background: var(--color-black-333);
+  box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+  border-radius: 2px;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.project-image {
+  height: calc(100% - 3.8rem);
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s, filter 0.5s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.project-item:hover .project-image {
+  filter: grayscale(0);
+  transform: scale(1.125);
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem 0.5rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.code {
+  color: var(--color-black-333);
+  transition: color 0.3s ease-out;
+  font-size: 1.25rem;
+}
+
+.project-title:hover .code {
+  color: var(--color-orangered);
+}
+
+.btn-show-all {
+  font-size: 2rem;
+  background: var(--main-gray);
+  transition: background 0.3s ease-out;
+  background: var(--color-black-333);
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  padding: 0.625rem 1.5rem;
+  color: var(--color-white);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-show-all:hover {
+  background: var(--color-orangered);
+  color: var(--color-black-333);
+  transition: all 0.3s;
+  box-shadow: 2px 2px 8px var(--color-black-333);
+}
+
+/*============================================ 
+ *  contact-area Start
+ *============================================*/
+
+.contact-area {
+  background: var(--color-gray-777);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-area-wrapper {
+  text-align: center;
+  color: var(--color-white);
+}
+
+.contact-area-header h2 {
+  font-size: 4rem;
+}
+
+.contact-area-header p {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  font-weight: 300;
+}
+
+.contact-link {
+  padding: 2.5rem 0;
+}
+
+a.btn.contact-details {
+  color: var(--color-white);
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease-out;
+}
+
+a.btn.contact-details:hover {
+  transition: transform 0.3s ease-in;
+  position: relative;
+  top: 1.25rem;
+  text-shadow: 1px 1px 2px #000;
+}
+
+a.btn.contact-details i {
+  color: var(--color-black-333);
+}
+
+a.btn.contact-details:hover i {
+  color: var(--color-green-04AA6D);
+}
+
+/*============================================ 
+ *  Footer Area Start
+ *============================================*/
+
+.footer-area {
+  border-top: 0.25rem solid var(--color-orangered);
+  background: var(--color-gray-777);
+  color: var(--color-white);
+}
+
+.footer-area-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 3.125rem 1rem;
+}
+
+.footer-area-wrapper a {
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  background: white;
+  margin: 0 0.25rem;
+  border-radius: 0.125rem;
+  opacity: 70%;
+}
+
+.footer-area-wrapper a:hover {
+  opacity: 100%;
+}
+
+/*======================================================
+ *  go to top btn start here
+ *======================================================*/
+
+.back-to-top {
+  width: 2.625rem;
+  height: 2.625rem;
+  padding: 0px;
+  position: fixed;
+  right: 6rem;
+  bottom: 8rem;
+  border: none;
+  border-radius: 20px 20px;
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.5s;
+  background: var(--color-black-333);
+}
+
+.back-to-top i {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  font-size: 2.5rem;
+  color: var(--color-orangered);
+  margin-top: 1px;
+}
+
+.back-to-top i:hover {
+  color: var(--color-green-04AA6D);
+  transition: opacity 0.5s;
+}
+
+/*======================================================
+ *  responsive css start here
+ *======================================================*/
+
+@media (max-width: 960px) {
+
+  .about-area h1 {
+    font-size: 3.25rem;
+  }
+
+  .about-area h3 {
+    font-size: 2rem;
+  }
+
+  a.btn.contact-details {
+    margin: 1rem 0;
+    font-size: 1.25rem;
+  }
+
+  .contact-area-header h2 {
+    font-size: 3rem;
+  }
+
+  .footer-area-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .back-to-top {
+    bottom: 4rem;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .header-left-side h1 a {
+    padding: 1rem;
+  }
+
+  .header-area-wrapper {
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+
+}
+
+/*============================================ 
+ *  End Of CSS
+ *============================================*/

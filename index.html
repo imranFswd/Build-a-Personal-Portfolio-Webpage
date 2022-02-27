@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build a Personal Portfolio Webpage</title>
+
+    <!-- Font Awesome CSS Link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <!-- Header Area Start -->
+    <header id="header-area" class="header-area">
+        <div class="container-fluid">
+            <div class="header-area-wrapper">
+                <div class="header-left-side">
+                    <h1>
+                        <a href="./index.html"><span class="imran">imran</span><span class="fswd">Fswd</span></a>
+                    </h1>
+                </div>
+                <div class="header-right-side" id="header-right-side">
+                    <ul>
+                        <li><a class="header-btn active" href="#about-area">about</a></li>
+                        <li><a class="header-btn" href="#work-area">work</a></li>
+                        <li><a class="header-btn" href="#contact-area">contact</a></li>
+                        <li><a class="header-btn" href="#footer-area">Copyright</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main  Area Start -->
+    <main id="main-area" class="main-area">
+      
+        <div class="main-area-wrapper">
+            
+        <!-- About Area Start -->
+        <section id="about-area" class="about-area">
+            <div class="container">
+                <h1>Hey I am <span class="imran">imran</span><span class="fswd">Fswd</span></h1>
+                <h3>a web developer</h3>
+            </div>
+        </section>
+
+        <!-- Word Area Start -->
+        <section id="work-area" class="work-area">
+            <div class="container">
+                <h1 class="work-area-header">These are some of my projects</h1>
+                <div class="projects-grid">
+                    <a class="project-item" href="https://www.freecodecamp.org/news/how-to-get-started-with-the-fcc-tribute-page/">
+                        <img class="project-image" src="	https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="Tribute Page">
+                        <p class="project-title">
+                            <code class="code">&lt;</code>
+                            Tribute Page
+                            <code class="code">/&gt;</code>
+                        </p>
+                    </a>
+                    <a class="project-item" href="https://forum.freecodecamp.org/t/random-quote-machine-where-to-start/440394">
+                        <img class="project-image" src="	https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" alt="Random Quote Machine">
+                        <p class="project-title">
+                            <code class="code">&lt;</code>
+                            Random Quote Machine
+                            <code class="code">/&gt;</code>
+                        </p>
+                    </a>
+                    <a class="project-item" href="https://www.freecodecamp.org/news/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98/">
+                        <img class="project-image" src="	https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="JavaScript Calculator">
+                        <p class="project-title">
+                            <code class="code">&lt;</code>
+                            JavaScript Calculator
+                            <code class="code">/&gt;</code>
+                        </p>
+                    </a>
+                    <a class="project-item" href="https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-map-data-across-the-globe/302365">
+                        <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" alt="Map Data Across the Globe">
+                        <p class="project-title">
+                            <code class="code">&lt;</code>
+                            Map Data Across the Globe
+                            <code class="code">/&gt;</code>
+                        </p>
+                    </a>
+                    <a class="project-item" href="https://forum.freecodecamp.org/t/lets-discuss-your-wikipedia-viewer/6002?page=21">
+                        <img class="project-image" src="	https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt="Wikipedia Viewer">
+                        <p class="project-title">
+                            <code class="code">&lt;</code>
+                            Wikipedia Viewer
+                            <code class="code">/&gt;</code>
+                        </p>
+                    </a>
+                    <a class="project-item" href="https://www.freecodecamp.org/news/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37/">
+                        <img class="project-image" src="	https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="Tic Tac Toe Game">
+                        <p class="project-title">
+                            <code class="code">&lt;</code>
+                            Tic Tac Toe Game
+                            <code class="code">/&gt;</code>
+                        </p>
+                    </a>
+                </div>
+                <a class="btn-show-all" href="">
+                    Show All
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Area Start -->
+        <section id="contact-area" class="contact-area">
+            <div class="container">
+                <div class="contact-area-wrapper">
+                    <div class="contact-area-header">
+                        <h2>Let's work together...</h2>
+                        <p>How do you take your coffee?</p>
+                    </div>
+    
+                    <!-- Contact Link Area Start -->
+                    <div class="contact-link">
+                        <a href="https://facebook.com/imranfswdr" target="_blank" class="btn contact-details">
+                            <i class="fab fa-facebook-square"></i> Facebook
+                        </a>
+                        <a id="profile-link" href="https://github.com/imranfswd" target="_blank" class="btn contact-details">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://twitter.com/imranfswd" target="_blank" class="btn contact-details">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        <a href="mailto:imranfswd@gmail.com" class="btn contact-details">
+                            <i class="fas fa-at"></i> Send a mail
+                        </a>
+                        <a href="tel:+8801740939496" class="btn contact-details">
+                            <i class="fas fa-mobile-alt"></i> Call me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Area Start -->
+    <footer id="footer-area" class="footer-area">
+      <div class="container">
+        <div class="footer-area-wrapper">
+          <p>&ast;&ast; This is just a fake portfolio. All the projects and contact
+            details given are not real.
+          </p>
+          <p>&copy; Created For <a href="./index.html"><span class="imran">imran</span><span class="fswd">Fswd</span></a> 2022</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- go to top button -->
+    <button class="back-to-top hidden">
+        <i class="fas fa-arrow-alt-circle-up "></i>
+    </button>
+    
+    <!-- js link -->
+    <script src="./app.js"></script>
+  </body>
+</html>
